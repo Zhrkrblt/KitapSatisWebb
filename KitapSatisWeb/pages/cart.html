@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim - KitapDünyası</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="../index.html">KitapDünyası</a>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Anasayfa</a>
+            <a href="favorites.html">Favoriler</a>
+            <a href="cart.html" class="active">Sepet <span class="cart-count">0</span></a>
+            <a href="login.html">Giriş Yap</a>
+        </div>
+    </nav>
+
+    <main class="cart-container">
+        <h2>Alışveriş Sepetim</h2>
+        <div class="cart-content">
+            <div class="cart-items" id="cartItems">
+                <!-- Sepet öğeleri JavaScript ile eklenecek -->
+            </div>
+            <div class="cart-summary">
+                <h3>Sipariş Özeti</h3>
+                <div class="summary-item">
+                    <span>Ara Toplam</span>
+                    <span id="subtotal">0.00 TL</span>
+                </div>
+                <div class="summary-item">
+                    <span>Kargo</span>
+                    <span id="shipping">0.00 TL</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Toplam</span>
+                    <span id="total">0.00 TL</span>
+                </div>
+                <button class="checkout-btn" onclick="window.location.href='payment.html'">Ödemeye Geç</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 KitapDünyası. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 
